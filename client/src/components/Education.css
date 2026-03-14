@@ -1,0 +1,73 @@
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.education-item {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #764ba2;
+}
+
+.degree {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.school {
+  font-size: 18px;
+  font-weight: 500;
+  color: #764ba2;
+  margin-bottom: 10px;
+}
+
+.education-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.edu-location,
+.edu-period {
+  color: #666;
+  font-size: 14px;
+}
+
+.edu-period {
+  font-weight: 600;
+  color: #764ba2;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.achievement-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .degree {
+    font-size: 18px;
+  }
+  
+  .school {
+    font-size: 16px;
+  }
+}
+
+
+
