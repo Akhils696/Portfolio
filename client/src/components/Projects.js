@@ -3,7 +3,7 @@ import './Projects.css';
 
 const Projects = ({ projects }) => {
   return (
-    <div className="section">
+    <section className="section" id="projects">
       <h2 className="section-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
@@ -28,7 +28,7 @@ const Projects = ({ projects }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

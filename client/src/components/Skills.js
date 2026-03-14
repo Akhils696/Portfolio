@@ -3,7 +3,7 @@ import './Skills.css';
 
 const Skills = ({ skills }) => {
   return (
-    <div className="section">
+    <section className="section" id="skills">
       <h2 className="section-title">Skills</h2>
       <div className="skills-container">
         {Object.entries(skills).map(([category, items]) => (
@@ -17,7 +17,7 @@ const Skills = ({ skills }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

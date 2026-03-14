@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import Header from './components/Header';
+import SectionNav from './components/SectionNav';
 import Summary from './components/Summary';
 import Experience from './components/Experience';
 import Education from './components/Education';
@@ -158,6 +159,7 @@ function App() {
     <div className="App">
       <div className="resume-container">
         <Header personalInfo={resumeData.personalInfo} quickFacts={resumeData.quickFacts} />
+        <SectionNav />
         <Summary summary={resumeData.summary} />
         <Experience experience={resumeData.experience} />
         <Education education={resumeData.education} />

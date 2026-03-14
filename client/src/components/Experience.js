@@ -3,7 +3,7 @@ import './Experience.css';
 
 const Experience = ({ experience }) => {
   return (
-    <div className="section">
+    <section className="section" id="experience">
       <h2 className="section-title">Work Experience</h2>
       <div className="experience-list">
         {experience.map((exp, index) => (
@@ -26,7 +26,7 @@ const Experience = ({ experience }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
