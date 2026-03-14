@@ -157,7 +157,7 @@ function App() {
   return (
     <div className="App">
       <div className="resume-container">
-        <Header personalInfo={resumeData.personalInfo} />
+        <Header personalInfo={resumeData.personalInfo} quickFacts={resumeData.quickFacts} />
         <Summary summary={resumeData.summary} />
         <Experience experience={resumeData.experience} />
         <Education education={resumeData.education} />
