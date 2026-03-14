@@ -9,6 +9,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   const [resumeData, setResumeData] = useState(null);
@@ -162,6 +163,7 @@ function App() {
         <Education education={resumeData.education} />
         <Skills skills={resumeData.skills} />
         <Projects projects={resumeData.projects} />
+        <ContactSection contact={resumeData.contact} />
       </div>
     </div>
   );
