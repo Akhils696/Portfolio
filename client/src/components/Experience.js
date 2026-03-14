@@ -1,5 +1,5 @@
-import React from 'react';
-import './Experience.css';
+import React from "react";
+import "./Experience.css";
 
 const Experience = ({ experience }) => {
   return (
@@ -18,6 +18,15 @@ const Experience = ({ experience }) => {
                 <span className="period">{exp.period}</span>
               </div>
             </div>
+            {exp.achievements && exp.achievements.length > 0 && (
+              <div className="experience-achievements">
+                {exp.achievements.map((achievement) => (
+                  <span key={achievement} className="achievement-pill">
+                    {achievement}
+                  </span>
+                ))}
+              </div>
+            )}
             <ul className="job-description">
               {exp.description.map((item, idx) => (
                 <li key={idx}>{item}</li>
@@ -31,6 +40,3 @@ const Experience = ({ experience }) => {
 };
 
 export default Experience;
-
-
-
