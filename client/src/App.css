@@ -172,6 +172,10 @@
   display: inline-block;
 }
 
+.section-heading-row .section-title {
+  margin-bottom: 0;
+}
+
 .summary-text {
   font-size: 16px;
   line-height: 1.8;
@@ -192,4 +196,3 @@
     font-size: 20px;
   }
 }
-

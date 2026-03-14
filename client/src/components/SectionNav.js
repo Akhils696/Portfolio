@@ -3,6 +3,7 @@ import "./SectionNav.css";
 
 const sections = [
   { id: "summary", label: "Summary" },
+  { id: "highlights", label: "Strengths" },
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "skills", label: "Skills" },

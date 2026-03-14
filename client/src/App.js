@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import SectionNav from './components/SectionNav';
 import Summary from './components/Summary';
+import Highlights from './components/Highlights';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -161,6 +162,7 @@ function App() {
         <Header personalInfo={resumeData.personalInfo} quickFacts={resumeData.quickFacts} />
         <SectionNav />
         <Summary summary={resumeData.summary} />
+        <Highlights highlights={resumeData.highlights} />
         <Experience experience={resumeData.experience} />
         <Education education={resumeData.education} />
         <Skills skills={resumeData.skills} />
