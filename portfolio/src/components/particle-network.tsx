@@ -78,8 +78,8 @@ function NetworkMesh() {
 
 export function ParticleNetwork() {
   return (
-    <div className="absolute inset-0 -z-10 opacity-90">
-      <Canvas camera={{ position: [0, 0, 5.4], fov: 48 }}>
+    <div className="pointer-events-none absolute inset-0 -z-10 opacity-90">
+      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5.4], fov: 48 }}>
         <fog attach="fog" args={["#04050d", 4, 9]} />
         <ambientLight intensity={0.8} />
         <pointLight position={[2, 3, 3]} intensity={12} color="#5ee7ff" />
