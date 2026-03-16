@@ -1,0 +1,24 @@
+.section-shell {
+  position: relative;
+  width: min(1200px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.glass-panel {
+  background: linear-gradient(180deg, rgba(14, 18, 38, 0.84), rgba(8, 11, 24, 0.74));
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-neon);
+  backdrop-filter: blur(18px);
+}
+
+.section-title {
+  font-family: var(--font-heading), sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
