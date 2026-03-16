@@ -26,6 +26,17 @@ export function HeroSection() {
             </a>
           </nav>
         </div>
+        <div className="mb-8 flex flex-wrap gap-3 md:hidden">
+          {["About", "Projects", "Profiles", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-[var(--color-text-soft)] hover:border-cyan-300/30 hover:text-white"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <Reveal>

@@ -23,6 +23,7 @@ export function GitHubActivityCard() {
           alt="GitHub contribution activity graph for Akhils696"
           width={1200}
           height={260}
+          sizes="(max-width: 768px) 100vw, 60vw"
           className="h-auto w-full rounded-xl"
         />
       </div>
