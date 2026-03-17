@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 export function TerminalCard() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.3 }}
       className="glass-panel rounded-3xl p-5"
+      style={{ opacity: 1, transform: "translate3d(0, 0, 0)" }}
     >
       <div className="mb-4 flex items-center gap-2">
         <span className="h-3 w-3 rounded-full bg-rose-400" />
