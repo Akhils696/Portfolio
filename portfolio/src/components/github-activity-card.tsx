@@ -19,13 +19,13 @@ export function GitHubActivityCard() {
       </div>
       <div className="overflow-hidden rounded-2xl border border-white/8 bg-[#050816] p-3">
         <Image
-          src="https://ghchart.rshah.org/5ee7ff/Akhils696"
+          src="https://ghchart.rshah.org/40c463/Akhils696"
           alt="GitHub contribution activity graph for Akhils696"
           width={1200}
           height={260}
-          sizes="(max-width: 768px) 100vw, 60vw"
+          unoptimized
           className="h-auto w-full rounded-xl"
-        />
+/>
       </div>
     </div>
   );
