@@ -40,7 +40,7 @@ export function HeroSection() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <Reveal>
-              <p className="eyebrow mb-6 text-xs text-cyan-300/80">Future-ready developer interface</p>
+              <p className="eyebrow mb-6 text-xs text-cyan-300/80">Future-ready developer</p>
             </Reveal>
             <Reveal delay={0.08}>
               <h1 className="max-w-4xl font-[var(--font-heading)] text-5xl font-semibold uppercase tracking-[0.08em] text-white sm:text-6xl lg:text-7xl">
