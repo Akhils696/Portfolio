@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function GitHubActivityCard() {
   return (
     <div className="glass-panel rounded-3xl p-6">
@@ -18,14 +16,18 @@ export function GitHubActivityCard() {
         </a>
       </div>
       <div className="overflow-hidden rounded-2xl border border-white/8 bg-[#050816] p-3">
-        <Image
+        {/* Static export on Vercel works more reliably when this external chart is rendered directly. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="https://ghchart.rshah.org/40c463/Akhils696"
           alt="GitHub contribution activity graph for Akhils696"
           width={1200}
           height={260}
-          unoptimized
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
           className="h-auto w-full rounded-xl"
-/>
+        />
       </div>
     </div>
   );

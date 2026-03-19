@@ -26,4 +26,13 @@ npm run lint
 npm run build
 ```
 
-The app is ready for static-friendly deployment on Vercel or any Next.js-compatible hosting platform.
+The app is configured for static export, which makes Vercel deployment straightforward.
+
+## Deploy To Vercel
+
+1. Push this project to GitHub.
+2. Import the repo into Vercel.
+3. Keep the detected framework as `Next.js`.
+4. Deploy with the default settings.
+
+`npm run build` generates the static site in `out/`, which Vercel will serve automatically.
