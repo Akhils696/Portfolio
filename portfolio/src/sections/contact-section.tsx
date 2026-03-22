@@ -3,8 +3,15 @@ import { CopyEmailButton } from "@/components/copy-email-button";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { codingProfiles, contactInfo } from "@/data/portfolio-data";
+import { buildEmailHref } from "@/lib/email-links";
 
 export function ContactSection() {
+  const quickEmailLinks = [
+    { label: "Default app", href: buildEmailHref({ to: contactInfo.email, client: "default" }) },
+    { label: "Gmail", href: buildEmailHref({ to: contactInfo.email, client: "gmail" }) },
+    { label: "Outlook", href: buildEmailHref({ to: contactInfo.email, client: "outlook" }) },
+  ];
+
   return (
     <section id="contact" className="py-24 pb-28">
       <div className="section-shell">
@@ -18,12 +25,22 @@ export function ContactSection() {
         <div className="mt-12 grid gap-6 xl:grid-cols-[0.85fr_1.15fr]">
           <Reveal delay={0.08} className="glass-panel rounded-[2rem] p-6 md:p-8">
             <p className="eyebrow text-xs text-cyan-300/80">Primary contact</p>
-            <a
-              href={`mailto:${contactInfo.email}`}
-              className="mt-4 block text-2xl font-semibold text-white hover:text-cyan-200"
-            >
+            <p className="mt-4 text-2xl font-semibold text-white">
               {contactInfo.email}
-            </a>
+            </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              {quickEmailLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target={link.label === "Default app" ? undefined : "_blank"}
+                  rel={link.label === "Default app" ? undefined : "noreferrer"}
+                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white hover:border-cyan-300/40 hover:bg-cyan-400/10"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
             <div className="mt-5">
               <CopyEmailButton email={contactInfo.email} />
             </div>

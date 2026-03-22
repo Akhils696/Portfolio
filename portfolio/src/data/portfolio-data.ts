@@ -25,6 +25,14 @@ export type Profile = {
   icon: IconType;
 };
 
+export type SkillMetric = {
+  label: string;
+  value: number;
+  tier: string;
+  detail: string;
+  spotlight?: boolean;
+};
+
 export const heroContent = {
   name: "Akhil Senthil",
   tagline: "AI/ML Developer | Software Engineer | Building Intelligent Systems",
@@ -70,12 +78,44 @@ export const skillGroups = [
   },
 ];
 
-export const skillChart = [
-  { label: "Python / ML Tooling", value: 90 },
-  { label: "Backend Engineering", value: 82 },
-  { label: "Computer Vision", value: 78 },
-  { label: "Web Development", value: 80 },
-  { label: "Systems Thinking", value: 76 },
+export const skillChart: SkillMetric[] = [
+  {
+    label: "Python / ML Tooling",
+    value: 90,
+    tier: "Advanced",
+    detail: "Built multiple AI and analytics projects with Python-first workflows.",
+    spotlight: true,
+  },
+  {
+    label: "Backend Engineering",
+    value: 82,
+    tier: "Strong",
+    detail: "Comfortable shipping APIs, app logic, and clean project structure.",
+  },
+  {
+    label: "Web Development",
+    value: 80,
+    tier: "Strong",
+    detail: "Building responsive interfaces with Next.js, Tailwind, and modern UI patterns.",
+  },
+  {
+    label: "Computer Vision",
+    value: 78,
+    tier: "Strong",
+    detail: "Worked with OpenCV pipelines, preprocessing, and model evaluation.",
+  },
+  {
+    label: "Cybersecurity",
+    value: 77,
+    tier: "Strong",
+    detail: "Building automation ideas around security workflows, tool orchestration, and system defense.",
+  },
+  {
+    label: "Systems Thinking",
+    value: 76,
+    tier: "Growing",
+    detail: "Interested in scalable architecture, networking, and dependable engineering tradeoffs.",
+  },
 ];
 
 export const focusBadges = [
