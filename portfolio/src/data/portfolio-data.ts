@@ -87,44 +87,109 @@ export const focusBadges = [
 
 export const projects: Project[] = [
   {
-    title: "RAG LLM Learning System",
+    title: "Evo Academy - AI-Powered Adaptive Learning Platform",
     description:
-      "An intelligent learning assistant that uses Retrieval Augmented Generation (RAG) to answer academic questions with context-aware explanations.",
+      "An adaptive learning platform built on a production-style RAG stack that ingests study materials, retrieves relevant context, and delivers personalized tutoring, quizzes, and study plans.",
     category: "AI",
-    stack: ["Python", "LangChain", "Vector Databases", "LLM APIs"],
-    features: ["Semantic search", "Contextual answers", "Document embeddings"],
+    stack: [
+      "Next.js",
+      "React",
+      "FastAPI",
+      "Python",
+      "OpenAI API / Ollama",
+      "LangChain",
+      "Weaviate / Pinecone",
+      "PostgreSQL / MongoDB",
+      "Docker",
+      "Tailwind CSS",
+    ],
+    features: [
+      "Document-grounded Q&A over PDFs, notes, and docs",
+      "RAG pipeline with embeddings, retrieval, and answer generation",
+      "Adaptive recommendations driven by learner progress",
+    ],
   },
   {
-    title: "Hybrid OpenCV Domain Adaptation System",
+    title: "API Documentation & Testing Platform (kpr-api)",
     description:
-      "A computer vision system designed to adapt models across domains using OpenCV preprocessing and hybrid learning techniques.",
-    category: "ML",
-    stack: ["Python", "OpenCV", "NumPy", "Machine Learning"],
-    features: ["Domain shift handling", "Image preprocessing pipeline", "Model evaluation metrics"],
-  },
-  {
-    title: "Peer-to-Peer WiFi + Bluetooth Mesh Network",
-    description:
-      "A decentralized communication network using WiFi Direct and Bluetooth Mesh for device-to-device data exchange without internet.",
+      "An interactive API documentation and testing platform with a modular dashboard for endpoint exploration, analytics, and Postman-style request workflows.",
     category: "Systems",
-    stack: ["Embedded C", "Networking protocols", "IoT communication"],
-    features: ["Mesh routing", "Offline communication", "Device discovery"],
+    stack: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "REST APIs",
+      "Chart.js / Recharts",
+    ],
+    features: [
+      "Interactive API documentation and in-browser testing",
+      "Performance and load-testing utilities",
+      "Analytics dashboards for API lifecycle visibility",
+    ],
   },
   {
-    title: "AI Code Analysis Assistant",
+    title: "AI-Powered Emergency Call Triage & Dispatch System (RAPID-100)",
     description:
-      "A tool that scans software repositories and identifies API connection issues, dependency loops, and architectural problems.",
+      "A real-time emergency response intelligence system that transcribes live calls, classifies incidents, scores severity, and supports faster dispatch decisions with explainable AI outputs.",
     category: "AI",
-    stack: ["Python", "Static analysis", "LLM based reasoning"],
-    features: ["Code dependency graph", "API error detection", "Debugging insights"],
+    stack: [
+      "Python",
+      "FastAPI",
+      "React",
+      "Whisper / Vosk",
+      "spaCy / Transformers",
+      "Scikit-learn / PyTorch",
+      "SHAP",
+      "WebSockets",
+      "PostgreSQL",
+    ],
+    features: [
+      "Live speech-to-text and emergency type classification",
+      "Severity scoring with location and entity extraction",
+      "Monitoring dashboard with explainability signals for operators",
+    ],
   },
   {
-    title: "Intelligent Learning Analytics System",
+    title: "AI Cybersecurity Multi-Agent System",
     description:
-      "An ML system that analyzes student learning behavior and predicts performance using data-driven insights.",
+      "A multi-agent security orchestration platform that coordinates AI workers with cybersecurity tools to automate defense workflows, investigations, and controlled attack simulations.",
+    category: "Systems",
+    stack: [
+      "Python",
+      "LangChain / CrewAI / AutoGen",
+      "FastAPI",
+      "Docker",
+      "REST APIs",
+      "Nmap / Metasploit integrations",
+      "Redis",
+    ],
+    features: [
+      "Multi-agent coordination across specialized security roles",
+      "Tool-driven automation for defense and simulation workflows",
+      "Systems-level architecture for extensible cyber operations",
+    ],
+  },
+  {
+    title: "Hybrid OpenCV Domain-Adaptive Droplet Analysis Pipeline",
+    description:
+      "A hybrid, domain-adaptive ML pipeline that converts complex experimental droplet imagery into interpretable size predictions by combining classical CV, foundation-model segmentation, CNN regression, and explainable AI.",
     category: "ML",
-    stack: ["Python", "Scikit-learn", "Pandas", "Data Visualization"],
-    features: ["Performance prediction", "Learning pattern analysis", "Data dashboards"],
+    stack: [
+      "Python",
+      "OpenCV",
+      "SAM",
+      "CNN Regression",
+      "SHAP",
+      "Domain Adaptation",
+      "Experimental Imaging",
+    ],
+    features: [
+      "OpenCV preprocessing and candidate detection under dense overlap",
+      "Foundation-model segmentation plus CNN diameter regression",
+      "SHAP-based feature attribution, uncertainty filtering, and SMD output",
+    ],
   },
 ];
 
