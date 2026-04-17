@@ -42,6 +42,12 @@ export function HeroSection() {
             <Reveal>
               <p className="eyebrow mb-6 text-xs text-cyan-300/80">Future-ready developer</p>
             </Reveal>
+            <Reveal delay={0.04}>
+              <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-emerald-300/20 bg-emerald-400/8 px-4 py-2 text-xs text-emerald-100 backdrop-blur">
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-300 shadow-[0_0_14px_rgba(110,231,183,0.9)]" />
+                Available for internships and AI/ML roles
+              </div>
+            </Reveal>
             <Reveal delay={0.08}>
               <h1 className="max-w-4xl font-[var(--font-heading)] text-5xl font-semibold uppercase tracking-[0.08em] text-white sm:text-6xl lg:text-7xl">
                 {heroContent.name}
@@ -61,20 +67,14 @@ export function HeroSection() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#projects"
-                  className="rounded-full bg-[linear-gradient(90deg,#5ee7ff_0%,#00ffa3_52%,#7c4dff_100%)] px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_22px_rgba(94,231,255,0.35)]"
+                  className="rounded-full bg-[linear-gradient(90deg,#5ee7ff_0%,#00ffa3_52%,#7c4dff_100%)] px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_22px_rgba(94,231,255,0.35)] hover:-translate-y-0.5"
                 >
-                  View Projects
-                </a>
-                <a
-                  href="#contact"
-                  className="rounded-full border border-cyan-300/20 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:border-cyan-300/40 hover:bg-cyan-400/10"
-                >
-                  Contact Me
+                  Explore Projects
                 </a>
                 <a
                   href={heroContent.resumeHref}
                   download
-                  className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:border-white/30 hover:bg-white/10"
+                  className="rounded-full border border-cyan-300/20 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:border-cyan-300/40 hover:bg-cyan-400/10"
                 >
                   Download Resume
                 </a>
