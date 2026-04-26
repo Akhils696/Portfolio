@@ -5,7 +5,14 @@ import {
   FaLinkedin,
   FaPython,
 } from "react-icons/fa";
-import { SiJavascript, SiLeetcode, SiNodedotjs, SiOpenjdk } from "react-icons/si";
+import {
+  SiJavascript,
+  SiLeetcode,
+  SiNodedotjs,
+  SiOpenjdk,
+  SiPostgresql,
+  SiTypescript,
+} from "react-icons/si";
 import type { IconType } from "react-icons";
 
 export type ProjectCategory = "AI" | "ML" | "Systems";
@@ -35,74 +42,76 @@ export type SkillMetric = {
 
 export const heroContent = {
   name: "Akhil Senthil",
-  tagline: "AI/ML Developer | Software Engineer | Building Intelligent Systems",
+  tagline: "AI/ML Researcher & Full-Stack Developer building production-style intelligent systems",
   intro:
-    "Computer Science student passionate about Artificial Intelligence, Machine Learning, and scalable software systems. I enjoy building intelligent tools that solve real-world problems using data and modern software engineering practices.",
+    "B.Tech Computer Science undergraduate at Amrita Vishwa Vidyapeetham with hands-on work across computer vision, NLP, LLM applications, and full-stack engineering using FastAPI, React, Docker, and vector databases.",
   resumeHref: "/akhil-senthil-resume.pdf",
 };
 
 export const quickStats = [
-  { label: "Current Focus", value: "AI Systems + Backend Engineering" },
-  { label: "Status", value: "2nd Year CSE Student" },
-  { label: "Mindset", value: "Research Driven, Production Ready" },
+  { label: "Education", value: "B.Tech CSE, Amrita - Expected 2028" },
+  { label: "CGPA", value: "8.3 / 10.0" },
+  { label: "Experience", value: "Python Development Intern, ShadowFox" },
 ];
 
 export const interestAreas = [
   "Artificial Intelligence",
   "Machine Learning",
+  "Computer Vision",
+  "NLP",
+  "LLM Applications",
   "Software Engineering",
   "Backend Systems",
-  "Open Source",
 ];
 
 export const skillGroups = [
   {
     title: "Programming Languages",
-    items: ["Python", "Java", "Embedded C", "JavaScript"],
+    items: ["Python", "Java", "C", "Embedded C", "JavaScript", "TypeScript", "Shell Script"],
     icon: FaPython,
   },
   {
     title: "Web Technologies",
-    items: ["HTML", "CSS", "Tailwind", "Node.js", "REST APIs"],
+    items: ["React", "Next.js", "Node.js", "Express", "FastAPI", "REST APIs"],
     icon: SiNodedotjs,
   },
   {
     title: "AI/ML",
-    items: ["Scikit-learn", "OpenCV", "NumPy", "Pandas", "Model training & evaluation"],
+    items: ["Computer Vision", "NLP", "CNNs", "RAG", "LLM APIs", "SHAP", "OpenCV"],
     icon: FaGithub,
   },
   {
-    title: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Linux", "Docker (basic)"],
-    icon: SiJavascript,
+    title: "Databases & Tools",
+    items: ["Weaviate", "MongoDB", "PostgreSQL", "Firebase", "Milvus", "Git", "Docker", "Postman"],
+    icon: SiPostgresql,
   },
 ];
 
 export const skillChart: SkillMetric[] = [
   {
     label: "Python / ML Tooling",
-    value: 90,
+    value: 91,
     tier: "Advanced",
-    detail: "Built multiple AI and analytics projects with Python-first workflows.",
+    detail: "Built computer vision, NLP, RAG, and automation projects with Python-first workflows.",
     spotlight: true,
   },
   {
-    label: "Backend Engineering",
-    value: 82,
+    label: "Full-Stack Engineering",
+    value: 84,
     tier: "Strong",
-    detail: "Comfortable shipping APIs, app logic, and clean project structure.",
-  },
-  {
-    label: "Web Development",
-    value: 80,
-    tier: "Strong",
-    detail: "Building responsive interfaces with Next.js, Tailwind, and modern UI patterns.",
+    detail: "Shipping FastAPI, React/Next.js, Node.js, and REST API systems with clean structure.",
   },
   {
     label: "Computer Vision",
-    value: 78,
+    value: 83,
     tier: "Strong",
-    detail: "Worked with OpenCV pipelines, preprocessing, and model evaluation.",
+    detail: "Processed large image datasets with OpenCV, CNNs, segmentation, and explainability.",
+  },
+  {
+    label: "RAG / LLM Applications",
+    value: 81,
+    tier: "Strong",
+    detail: "Building document ingestion, vector search, contextual Q&A, and adaptive workflows.",
   },
   {
     label: "Cybersecurity",
@@ -120,9 +129,10 @@ export const skillChart: SkillMetric[] = [
 
 export const focusBadges = [
   { label: "Python First", icon: FaPython },
+  { label: "TypeScript Ready", icon: SiTypescript },
   { label: "Java Foundations", icon: SiOpenjdk },
   { label: "Node APIs", icon: SiNodedotjs },
-  { label: "Frontend Logic", icon: SiJavascript },
+  { label: "React/Next.js", icon: SiJavascript },
 ];
 
 export const projects: Project[] = [
@@ -268,7 +278,7 @@ export const codingProfiles: Profile[] = [
 
 export const contactInfo = {
   email: "akhilsenthil696@gmail.com",
-  heading: "Let’s build intelligent systems that matter.",
+  heading: "Let's build intelligent systems that matter.",
   description:
-    "I’m open to AI/ML Engineer and Software Development Engineer opportunities, collaborative builds, and research-driven product work.",
+    "I'm open to AI/ML Engineer, Full-Stack Developer, and Software Development Engineer opportunities, collaborative builds, and research-driven product work.",
 };

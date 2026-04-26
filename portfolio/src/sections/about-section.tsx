@@ -10,8 +10,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="About"
-            title="Building at the intersection of machine intelligence and software systems."
-            description="Akhil is a 2nd Year Computer Science and Engineering student focused on creating practical AI/ML workflows, dependable backend systems, and clean developer experiences."
+            title="Building at the intersection of applied AI research and full-stack systems."
+            description="Akhil is a B.Tech Computer Science undergraduate at Amrita Vishwa Vidyapeetham focused on computer vision, NLP, LLM applications, and dependable product engineering."
           />
         </Reveal>
         <div className="mt-12 grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
@@ -20,7 +20,7 @@ export function AboutSection() {
               <div>
                 <p className="eyebrow text-xs text-cyan-300/80">Status</p>
                 <p className="mt-3 text-2xl font-semibold text-white">
-                  2nd Year Computer Science and Engineering Student
+                  B.Tech Computer Science Student - Expected 2028
                 </p>
                 <div className="mt-8">
                   <p className="eyebrow text-xs text-cyan-300/80">Interests</p>
