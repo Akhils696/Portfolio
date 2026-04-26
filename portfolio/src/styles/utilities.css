@@ -5,20 +5,35 @@
 }
 
 .glass-panel {
-  background: linear-gradient(180deg, rgba(14, 18, 38, 0.84), rgba(8, 11, 24, 0.74));
+  background:
+    linear-gradient(180deg, rgba(20, 31, 54, 0.86), rgba(8, 14, 28, 0.78)),
+    linear-gradient(135deg, rgba(125, 211, 252, 0.08), rgba(52, 211, 153, 0.03));
   border: 1px solid var(--color-border);
   box-shadow: var(--shadow-neon);
   backdrop-filter: blur(18px);
 }
 
+.glass-panel:hover {
+  border-color: rgba(125, 211, 252, 0.3);
+  box-shadow: var(--shadow-focus), var(--shadow-neon);
+}
+
+.signal-panel {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.94), rgba(8, 13, 26, 0.9)),
+    radial-gradient(circle at top left, rgba(52, 211, 153, 0.14), transparent 32%);
+  border: 1px solid rgba(125, 211, 252, 0.18);
+  box-shadow: 0 24px 80px rgba(2, 8, 23, 0.58);
+}
+
 .section-title {
   font-family: var(--font-heading), sans-serif;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .eyebrow {
   font-family: var(--font-mono), monospace;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
