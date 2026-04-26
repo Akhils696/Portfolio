@@ -20,12 +20,12 @@ export function TerminalCard() {
         <p>
           <span className="text-cyan-300">{">"}</span> whoami
         </p>
-        <p className="text-white">Akhil Senthil - AI/ML Developer</p>
+        <p className="text-white">Akhil Senthil - AI/ML Researcher & Full-Stack Developer</p>
         <p>
           <span className="text-cyan-300">{">"}</span> focus --current
         </p>
         <p className="text-[var(--color-text-soft)]">
-          Building machine learning systems, backend APIs, and developer-first tools.
+          Building computer vision, RAG, backend API, and developer-first product systems.
         </p>
         <p>
           <span className="text-cyan-300">{">"}</span> status

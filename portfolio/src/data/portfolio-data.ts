@@ -177,7 +177,7 @@ export const projects: Project[] = [
   {
     title: "Evo Academy - AI-Powered Adaptive Learning Platform",
     description:
-      "An adaptive learning platform built on a production-style RAG stack that ingests study materials, retrieves relevant context, and delivers personalized tutoring, quizzes, and study plans.",
+      "A personalized AI learning platform using LLMs and RAG to turn PDFs and notes into contextual Q&A, quizzes, and adaptive learning recommendations.",
     category: "AI",
     stack: [
       "Next.js",
@@ -192,9 +192,9 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     features: [
-      "Document-grounded Q&A over PDFs, notes, and docs",
-      "RAG pipeline with embeddings, retrieval, and answer generation",
-      "Adaptive recommendations driven by learner progress",
+      "Document ingestion pipeline that converts learning material into vector embeddings",
+      "Semantic retrieval and document-grounded answer generation",
+      "Adaptive quiz and recommendation flows driven by learner progress",
     ],
   },
   {
@@ -220,7 +220,7 @@ export const projects: Project[] = [
   {
     title: "AI-Powered Emergency Call Triage & Dispatch System (RAPID-100)",
     description:
-      "A real-time emergency response intelligence system that transcribes live calls, classifies incidents, scores severity, and supports faster dispatch decisions with explainable AI outputs.",
+      "A real-time emergency call processing system that combines speech-to-text, NLP, and ML classification to support faster dispatch decisions.",
     category: "AI",
     stack: [
       "Python",
@@ -235,14 +235,14 @@ export const projects: Project[] = [
     ],
     features: [
       "Live speech-to-text and emergency type classification",
-      "Severity scoring with location and entity extraction",
-      "Monitoring dashboard with explainability signals for operators",
+      "Severity scoring, location detection, and entity extraction",
+      "FastAPI backend with real-time dashboard support for dispatch workflows",
     ],
   },
   {
-    title: "AI Cybersecurity Multi-Agent System",
+    title: "CyberAgent - AI Cybersecurity Multi-Agent System",
     description:
-      "A multi-agent security orchestration platform that coordinates AI workers with cybersecurity tools to automate defense workflows, investigations, and controlled attack simulations.",
+      "A multi-agent security orchestration platform using LangChain/CrewAI-style agents to automate cybersecurity workflows, defense tasks, and controlled simulations.",
     category: "Systems",
     stack: [
       "Python",
@@ -255,14 +255,14 @@ export const projects: Project[] = [
     ],
     features: [
       "Multi-agent coordination across specialized security roles",
-      "Tool-driven automation for defense and simulation workflows",
-      "Systems-level architecture for extensible cyber operations",
+      "Tool integrations for automated defense and attack simulation",
+      "REST API, Docker, and orchestration patterns for scalable cyber operations",
     ],
   },
   {
-    title: "Hybrid OpenCV Domain-Adaptive Droplet Analysis Pipeline",
+    title: "Centrifugal Atomizer Droplet Analysis using AI",
     description:
-      "A hybrid, domain-adaptive ML pipeline that converts complex experimental droplet imagery into interpretable size predictions by combining classical CV, foundation-model segmentation, CNN regression, and explainable AI.",
+      "An AI-assisted experimental analysis pipeline that processed 100k+ droplet images with OpenCV, segmentation, CNN models, and explainability methods.",
     category: "ML",
     stack: [
       "Python",
@@ -274,9 +274,9 @@ export const projects: Project[] = [
       "Experimental Imaging",
     ],
     features: [
-      "OpenCV preprocessing and candidate detection under dense overlap",
-      "Foundation-model segmentation plus CNN diameter regression",
-      "SHAP-based feature attribution, uncertainty filtering, and SMD output",
+      "OpenCV preprocessing and candidate detection across large image batches",
+      "SAM-based segmentation with CNN regression for droplet analysis",
+      "SHAP-based explainability to make model outputs easier to inspect",
     ],
   },
 ];

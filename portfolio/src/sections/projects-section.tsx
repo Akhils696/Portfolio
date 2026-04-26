@@ -10,8 +10,8 @@ export function ProjectsSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Featured Projects"
-            title="Selected builds across AI, machine learning, and distributed systems."
-            description="A project showcase designed like a technical mission board, with interactive filtering and hover motion to highlight the strongest work first."
+            title="Selected builds across applied AI, machine learning, and full-stack systems."
+            description="A project showcase grounded in resume evidence, from RAG learning tools and emergency triage to computer vision research and cybersecurity automation."
           />
         </Reveal>
         <div className="mt-12">
