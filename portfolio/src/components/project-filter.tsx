@@ -28,10 +28,10 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
             type="button"
             onClick={() => setActiveFilter(filter)}
             className={clsx(
-              "rounded-full border px-4 py-2 text-sm font-medium",
+              "rounded-full border px-4 py-2 font-mono text-xs font-medium uppercase tracking-[0.16em]",
               activeFilter === filter
-                ? "border-cyan-300 bg-cyan-400/10 text-cyan-100 shadow-[0_0_18px_rgba(94,231,255,0.2)]"
-                : "border-white/10 bg-white/5 text-[var(--color-text-soft)] hover:border-cyan-300/40 hover:text-white",
+                ? "border-sky-300 bg-sky-400/10 text-sky-100 shadow-[0_0_18px_rgba(125,211,252,0.18)]"
+                : "border-white/10 bg-slate-950/35 text-[var(--color-text-soft)] hover:border-sky-300/40 hover:text-white",
             )}
           >
             {filter}
@@ -48,13 +48,15 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.45, delay: index * 0.06 }}
             whileHover={{ y: -6 }}
-            className="glass-panel group rounded-3xl p-6"
+            className="glass-panel group rounded-[1.5rem] p-6"
           >
-            <div className="mb-5 flex items-center justify-between">
-              <span className="rounded-full border border-cyan-400/20 px-3 py-1 font-mono text-xs text-cyan-200">
+            <div className="mb-5 flex items-center justify-between gap-3">
+              <span className="rounded-full border border-sky-400/20 bg-sky-400/8 px-3 py-1 font-mono text-xs text-sky-200">
                 {project.category}
               </span>
-              <span className="font-mono text-xs text-[var(--color-text-soft)]">0{index + 1}</span>
+              <span className="font-mono text-xs text-[var(--color-text-muted)]">
+                MODEL-CARD 0{index + 1}
+              </span>
             </div>
             <h3 className="text-xl font-semibold text-white">{project.title}</h3>
             <p className="mt-4 text-sm leading-7 text-[var(--color-text-soft)]">
@@ -72,8 +74,8 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
             </div>
             <div className="mt-6 space-y-2">
               {project.features.map((feature) => (
-                <p key={feature} className="text-sm text-slate-300">
-                  <span className="mr-2 text-cyan-300">+</span>
+                <p key={feature} className="text-sm leading-6 text-slate-300">
+                  <span className="mr-2 text-emerald-300">+</span>
                   {feature}
                 </p>
               ))}
