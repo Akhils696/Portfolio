@@ -11,13 +11,13 @@ export function SkillsChart({ items }: SkillChartProps) {
   const sortedItems = [...items].sort((left, right) => right.value - left.value);
 
   return (
-    <div className="glass-panel rounded-3xl p-6">
+    <div className="glass-panel rounded-[1.5rem] p-6">
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <p className="eyebrow text-xs text-cyan-300/80">Skills Matrix</p>
+          <p className="eyebrow text-xs text-sky-300/80">Skills Matrix</p>
           <h3 className="mt-2 text-xl font-semibold text-white">Core strengths</h3>
         </div>
-        <span className="rounded-full border border-cyan-400/20 px-3 py-1 font-mono text-xs text-cyan-200">
+        <span className="rounded-full border border-emerald-300/20 bg-emerald-400/8 px-3 py-1 font-mono text-xs text-emerald-100">
           recruiter view
         </span>
       </div>
@@ -27,7 +27,7 @@ export function SkillsChart({ items }: SkillChartProps) {
             key={item.label}
             className={`rounded-2xl border p-4 transition-colors ${
               item.spotlight
-                ? "border-cyan-300/25 bg-cyan-400/6 shadow-[0_0_24px_rgba(94,231,255,0.12)]"
+                ? "border-sky-300/25 bg-sky-400/6 shadow-[0_0_24px_rgba(125,211,252,0.12)]"
                 : "border-white/8 bg-white/[0.03]"
             }`}
           >
@@ -46,13 +46,13 @@ export function SkillsChart({ items }: SkillChartProps) {
                 </p>
               </div>
               <div className="text-right">
-                <p className="font-mono text-cyan-200">{item.tier}</p>
+                <p className="font-mono text-sky-200">{item.tier}</p>
                 <p className="mt-1 text-xs text-slate-400">{item.value}/100 confidence</p>
               </div>
             </div>
             <div className="h-3 rounded-full bg-slate-900/80">
               <motion.div
-                className="h-3 rounded-full bg-[linear-gradient(90deg,#5ee7ff_0%,#00ffa3_55%,#7c4dff_100%)] shadow-[0_0_18px_rgba(94,231,255,0.35)]"
+                className="h-3 rounded-full bg-[linear-gradient(90deg,#7dd3fc_0%,#34d399_58%,#f5c451_100%)] shadow-[0_0_18px_rgba(125,211,252,0.26)]"
                 initial={{ width: 0 }}
                 whileInView={{ width: `${item.value}%` }}
                 viewport={{ once: true }}

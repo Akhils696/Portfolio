@@ -15,20 +15,20 @@ export function AboutSection() {
           />
         </Reveal>
         <div className="mt-12 grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
-          <Reveal delay={0.06} className="glass-panel rounded-[2rem] p-6 md:p-8">
+          <Reveal delay={0.06} className="glass-panel rounded-[1.5rem] p-6 md:p-8">
             <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
               <div>
-                <p className="eyebrow text-xs text-cyan-300/80">Status</p>
+                <p className="eyebrow text-xs text-sky-300/80">Status</p>
                 <p className="mt-3 text-2xl font-semibold text-white">
                   B.Tech Computer Science Student - Expected 2028
                 </p>
                 <div className="mt-8">
-                  <p className="eyebrow text-xs text-cyan-300/80">Interests</p>
+                  <p className="eyebrow text-xs text-sky-300/80">AI Engineering Signals</p>
                   <div className="mt-4 flex flex-wrap gap-3">
                     {interestAreas.map((interest) => (
                       <span
                         key={interest}
-                        className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                        className="rounded-full border border-sky-300/12 bg-slate-950/35 px-4 py-2 text-sm text-slate-200"
                       >
                         {interest}
                       </span>
@@ -41,9 +41,9 @@ export function AboutSection() {
                   const Icon = group.icon;
 
                   return (
-                    <div key={group.title} className="rounded-3xl border border-white/8 bg-white/5 p-5">
+                    <div key={group.title} className="rounded-2xl border border-white/8 bg-white/5 p-5">
                       <div className="flex items-center gap-3">
-                        <Icon className="text-lg text-cyan-300" />
+                        <Icon className="text-lg text-sky-300" />
                         <h3 className="text-lg font-semibold text-white">{group.title}</h3>
                       </div>
                       <div className="mt-4 flex flex-wrap gap-2">
@@ -68,9 +68,9 @@ export function AboutSection() {
                 return (
                   <div
                     key={badge.label}
-                    className="flex items-center gap-2 rounded-full border border-cyan-300/16 px-4 py-2 text-sm text-cyan-50"
+                    className="flex items-center gap-2 rounded-full border border-sky-300/16 bg-slate-950/30 px-4 py-2 text-sm text-sky-50"
                   >
-                    <Icon className="text-cyan-300" />
+                    <Icon className="text-sky-300" />
                     {badge.label}
                   </div>
                 );
