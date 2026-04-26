@@ -52,7 +52,7 @@ function NetworkMesh() {
           new Points(
             pointGeometry,
             new PointsMaterial({
-              color: "#72f6ff",
+              color: "#7dd3fc",
               size: 0.08,
               transparent: true,
               opacity: 0.95,
@@ -65,9 +65,9 @@ function NetworkMesh() {
           new LineSegments(
             lineGeometry,
             new LineBasicMaterial({
-              color: "#60d7ff",
+              color: "#34d399",
               transparent: true,
-              opacity: 0.28,
+              opacity: 0.24,
             }),
           )
         }
@@ -80,9 +80,10 @@ export function ParticleNetwork() {
   return (
     <div className="pointer-events-none absolute inset-0 -z-10 opacity-90">
       <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 5.4], fov: 48 }}>
-        <fog attach="fog" args={["#04050d", 4, 9]} />
+        <fog attach="fog" args={["#030712", 4, 9]} />
         <ambientLight intensity={0.8} />
-        <pointLight position={[2, 3, 3]} intensity={12} color="#5ee7ff" />
+        <pointLight position={[2, 3, 3]} intensity={12} color="#7dd3fc" />
+        <pointLight position={[-3, -1, 2]} intensity={5} color="#34d399" />
         <NetworkMesh />
         <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.35} />
       </Canvas>

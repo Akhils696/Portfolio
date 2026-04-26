@@ -18,14 +18,17 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akhil Senthil | AI/ML Developer Portfolio",
+  title: "Akhil Senthil | AI Engineer & Full-Stack Developer",
   description:
-    "Modern futuristic portfolio for Akhil Senthil, a Computer Science student focused on AI/ML engineering and scalable software development.",
+    "Professional AI engineering portfolio for Akhil Senthil, a Computer Science undergraduate building computer vision, RAG, LLM, FastAPI, and full-stack systems.",
   keywords: [
     "Akhil Senthil",
-    "AI/ML Developer",
+    "AI Engineer",
+    "AI/ML Researcher",
+    "Full-Stack Developer",
     "Software Engineer",
-    "Computer Science Student",
+    "Computer Vision",
+    "RAG Applications",
     "Next.js Portfolio",
   ],
 };
