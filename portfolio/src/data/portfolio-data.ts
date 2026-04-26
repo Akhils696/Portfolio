@@ -40,6 +40,14 @@ export type SkillMetric = {
   spotlight?: boolean;
 };
 
+export type TimelineItem = {
+  title: string;
+  organization: string;
+  period: string;
+  summary: string;
+  highlights: string[];
+};
+
 export const heroContent = {
   name: "Akhil Senthil",
   tagline: "AI/ML Researcher & Full-Stack Developer building production-style intelligent systems",
@@ -133,6 +141,36 @@ export const focusBadges = [
   { label: "Java Foundations", icon: SiOpenjdk },
   { label: "Node APIs", icon: SiNodedotjs },
   { label: "React/Next.js", icon: SiJavascript },
+];
+
+export const experienceItems: TimelineItem[] = [
+  {
+    title: "Python Development Intern",
+    organization: "ShadowFox",
+    period: "May 2025",
+    summary:
+      "Virtual internship focused on Python-based problem solving, modular code, and clean implementation habits.",
+    highlights: [
+      "Built Python solutions with attention to readability and maintainability",
+      "Practiced modular design across small development tasks",
+      "Strengthened debugging, documentation, and problem decomposition workflows",
+    ],
+  },
+];
+
+export const researchItems: TimelineItem[] = [
+  {
+    title: "Multidimensional Assessment of Drinking Water Scarcity",
+    organization: "International Conference on Sustainable Resilience (ICSRF)",
+    period: "2025",
+    summary:
+      "Authored and presented applied research on socio-economic impacts using HCD and PRA methodologies.",
+    highlights: [
+      "Presented at ICSRF 2025",
+      "Analyzed water scarcity through human-centered and participatory research methods",
+      "Connected data-driven engineering thinking with sustainable resilience challenges",
+    ],
+  },
 ];
 
 export const projects: Project[] = [

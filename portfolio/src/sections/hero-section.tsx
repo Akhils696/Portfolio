@@ -15,6 +15,9 @@ export function HeroSection() {
             <a href="#about" className="hover:text-white">
               About
             </a>
+            <a href="#experience" className="hover:text-white">
+              Experience
+            </a>
             <a href="#projects" className="hover:text-white">
               Projects
             </a>
@@ -27,7 +30,7 @@ export function HeroSection() {
           </nav>
         </div>
         <div className="mb-8 flex flex-wrap gap-3 md:hidden">
-          {["About", "Projects", "Profiles", "Contact"].map((item) => (
+          {["About", "Experience", "Projects", "Profiles", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
