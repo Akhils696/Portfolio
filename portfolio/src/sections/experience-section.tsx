@@ -10,17 +10,17 @@ type TimelineColumnProps = {
 
 function TimelineColumn({ eyebrow, items }: TimelineColumnProps) {
   return (
-    <div className="glass-panel rounded-[2rem] p-6 md:p-8">
-      <p className="eyebrow text-xs text-cyan-300/80">{eyebrow}</p>
+    <div className="glass-panel rounded-[1.5rem] p-6 md:p-8">
+      <p className="eyebrow text-xs text-sky-300/80">{eyebrow}</p>
       <div className="mt-6 space-y-5">
         {items.map((item) => (
-          <article key={item.title} className="rounded-3xl border border-white/8 bg-white/5 p-5">
+          <article key={item.title} className="rounded-2xl border border-white/8 bg-slate-950/28 p-5">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm text-cyan-100">{item.organization}</p>
+                <p className="mt-2 text-sm text-sky-100">{item.organization}</p>
               </div>
-              <span className="rounded-full border border-cyan-400/20 px-3 py-1 font-mono text-xs text-cyan-200">
+              <span className="rounded-full border border-emerald-300/20 bg-emerald-400/8 px-3 py-1 font-mono text-xs text-emerald-100">
                 {item.period}
               </span>
             </div>
@@ -28,7 +28,7 @@ function TimelineColumn({ eyebrow, items }: TimelineColumnProps) {
             <div className="mt-5 space-y-2">
               {item.highlights.map((highlight) => (
                 <p key={highlight} className="text-sm text-slate-300">
-                  <span className="mr-2 text-cyan-300">+</span>
+                  <span className="mr-2 text-emerald-300">+</span>
                   {highlight}
                 </p>
               ))}

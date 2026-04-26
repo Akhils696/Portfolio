@@ -26,11 +26,11 @@ export function ProfilesSection() {
                     href={profile.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="glass-panel rounded-3xl p-5 hover:-translate-y-1"
+                    className="glass-panel rounded-[1.5rem] p-5 hover:-translate-y-1"
                   >
                     <div className="flex items-center justify-between">
-                      <Icon className="text-2xl text-cyan-300" />
-                      <span className="font-mono text-xs text-[var(--color-text-soft)]">
+                      <Icon className="text-2xl text-sky-300" />
+                      <span className="font-mono text-xs text-[var(--color-text-muted)]">
                         0{index + 1}
                       </span>
                     </div>

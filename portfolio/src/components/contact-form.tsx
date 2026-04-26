@@ -36,7 +36,7 @@ export function ContactForm({ email }: ContactFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="glass-panel rounded-3xl p-6">
+    <form onSubmit={handleSubmit} className="glass-panel rounded-[1.5rem] p-6">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm">
           <span className="text-[var(--color-text-soft)]">Your name</span>
@@ -44,7 +44,7 @@ export function ContactForm({ email }: ContactFormProps) {
             required
             value={form.name}
             onChange={(event) => setForm((current) => ({ ...current, name: event.target.value }))}
-            className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-cyan-300/40"
+            className="w-full rounded-2xl border border-white/10 bg-slate-950/35 px-4 py-3 text-white outline-none focus:border-sky-300/40"
             placeholder="A recruiter, collaborator, or founder"
           />
         </label>
@@ -55,7 +55,7 @@ export function ContactForm({ email }: ContactFormProps) {
             type="email"
             value={form.email}
             onChange={(event) => setForm((current) => ({ ...current, email: event.target.value }))}
-            className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-cyan-300/40"
+            className="w-full rounded-2xl border border-white/10 bg-slate-950/35 px-4 py-3 text-white outline-none focus:border-sky-300/40"
             placeholder="name@company.com"
           />
         </label>
@@ -67,7 +67,7 @@ export function ContactForm({ email }: ContactFormProps) {
           rows={6}
           value={form.message}
           onChange={(event) => setForm((current) => ({ ...current, message: event.target.value }))}
-          className="w-full rounded-3xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none focus:border-cyan-300/40"
+          className="w-full rounded-2xl border border-white/10 bg-slate-950/35 px-4 py-3 text-white outline-none focus:border-sky-300/40"
           placeholder="Tell me about the role, project scope, or research direction."
         />
       </label>
@@ -76,7 +76,7 @@ export function ContactForm({ email }: ContactFormProps) {
         <select
           value={emailClient}
           onChange={(event) => setEmailClient(event.target.value as EmailClient)}
-          className="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-white outline-none focus:border-cyan-300/40"
+          className="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-white outline-none focus:border-sky-300/40"
         >
           <option value="default">Default mail app</option>
           <option value="gmail">Gmail</option>
@@ -85,7 +85,7 @@ export function ContactForm({ email }: ContactFormProps) {
       </label>
       <button
         type="submit"
-        className="mt-5 rounded-full bg-[linear-gradient(90deg,#5ee7ff_0%,#00ffa3_48%,#7c4dff_100%)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_24px_rgba(94,231,255,0.35)] hover:scale-[1.02]"
+        className="mt-5 rounded-full bg-[linear-gradient(90deg,#7dd3fc_0%,#34d399_52%,#f5c451_100%)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_24px_rgba(125,211,252,0.28)] hover:scale-[1.02]"
       >
         Continue to email
       </button>
