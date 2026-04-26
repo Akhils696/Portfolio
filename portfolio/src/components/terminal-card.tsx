@@ -8,7 +8,7 @@ export function TerminalCard() {
       initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, delay: 0.3 }}
-      className="glass-panel rounded-3xl p-5"
+      className="signal-panel rounded-3xl p-5"
       style={{ opacity: 1, transform: "translate3d(0, 0, 0)" }}
     >
       <div className="mb-4 flex items-center gap-2">
@@ -22,15 +22,15 @@ export function TerminalCard() {
         </p>
         <p className="text-white">Akhil Senthil - AI/ML Researcher & Full-Stack Developer</p>
         <p>
-          <span className="text-cyan-300">{">"}</span> focus --current
+          <span className="text-sky-300">{">"}</span> stack --signal
         </p>
         <p className="text-[var(--color-text-soft)]">
-          Building computer vision, RAG, backend API, and developer-first product systems.
+          Python | FastAPI | React | RAG | Computer Vision | Docker
         </p>
         <p>
-          <span className="text-cyan-300">{">"}</span> status
+          <span className="text-sky-300">{">"}</span> current --focus
         </p>
-        <p className="text-emerald-300">Open to AI/ML Engineer and SDE opportunities</p>
+        <p className="text-emerald-300">Research-backed AI products and production-grade APIs</p>
       </div>
     </motion.div>
   );

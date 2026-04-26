@@ -7,10 +7,10 @@ export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen">
       <ParticleNetwork />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,5,13,0.25),rgba(4,5,13,0.9))]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,7,18,0.18),rgba(3,7,18,0.82)_58%,rgba(2,6,23,0.98))]" />
       <div className="section-shell relative z-10 flex min-h-screen flex-col justify-center py-24">
-        <div className="mb-10 flex items-center justify-between gap-4 rounded-full border border-white/8 bg-white/5 px-5 py-3 text-sm backdrop-blur md:px-7">
-          <span className="eyebrow text-cyan-200">Akhil Senthil // Portfolio</span>
+        <div className="mb-10 flex items-center justify-between gap-4 rounded-full border border-sky-300/15 bg-slate-950/45 px-5 py-3 text-sm shadow-[0_18px_50px_rgba(2,8,23,0.34)] backdrop-blur md:px-7">
+          <span className="eyebrow text-sky-200">Akhil Senthil // AI Engineer</span>
           <nav className="hidden gap-6 text-[var(--color-text-soft)] md:flex">
             <a href="#about" className="hover:text-white">
               About
@@ -43,12 +43,12 @@ export function HeroSection() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <Reveal>
-              <p className="eyebrow mb-6 text-xs text-cyan-300/80">Future-ready developer</p>
+              <p className="eyebrow mb-6 text-xs text-sky-300/80">Applied AI systems engineer</p>
             </Reveal>
             <Reveal delay={0.04}>
-              <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-emerald-300/20 bg-emerald-400/8 px-4 py-2 text-xs text-emerald-100 backdrop-blur">
+              <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs text-emerald-100 shadow-[0_0_24px_rgba(52,211,153,0.14)] backdrop-blur">
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-300 shadow-[0_0_14px_rgba(110,231,183,0.9)]" />
-                Available for internships and AI/ML roles
+                Available for AI/ML, full-stack, and SDE internships
               </div>
             </Reveal>
             <Reveal delay={0.08}>
@@ -70,14 +70,14 @@ export function HeroSection() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <a
                   href="#projects"
-                  className="rounded-full bg-[linear-gradient(90deg,#5ee7ff_0%,#00ffa3_52%,#7c4dff_100%)] px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_22px_rgba(94,231,255,0.35)] hover:-translate-y-0.5"
+                  className="rounded-full bg-[linear-gradient(90deg,#7dd3fc_0%,#34d399_48%,#f5c451_100%)] px-7 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_26px_rgba(125,211,252,0.28)] hover:-translate-y-0.5"
                 >
                   Explore Projects
                 </a>
                 <a
                   href={heroContent.resumeHref}
                   download
-                  className="rounded-full border border-cyan-300/20 bg-white/5 px-6 py-3 text-sm font-medium text-white hover:border-cyan-300/40 hover:bg-cyan-400/10"
+                  className="rounded-full border border-sky-300/25 bg-slate-950/45 px-6 py-3 text-sm font-medium text-white hover:border-sky-300/45 hover:bg-sky-400/10"
                 >
                   Download Resume
                 </a>
@@ -86,9 +86,11 @@ export function HeroSection() {
             <Reveal delay={0.3}>
               <div className="mt-10 grid gap-4 md:grid-cols-3">
                 {quickStats.map((stat) => (
-                  <div key={stat.label} className="glass-panel rounded-2xl p-4">
-                    <p className="text-sm text-[var(--color-text-soft)]">{stat.label}</p>
-                    <p className="mt-2 text-sm font-semibold text-white">{stat.value}</p>
+                  <div key={stat.label} className="signal-panel rounded-2xl p-4">
+                    <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-sky-200/80">
+                      {stat.label}
+                    </p>
+                    <p className="mt-2 text-sm font-semibold leading-6 text-white">{stat.value}</p>
                   </div>
                 ))}
               </div>
