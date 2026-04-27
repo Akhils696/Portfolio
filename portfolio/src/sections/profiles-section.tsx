@@ -14,7 +14,7 @@ export function ProfilesSection() {
             description="Links are grouped in a clean control-panel layout so recruiters can move directly from the portfolio into Akhil's coding profiles and activity trail."
           />
         </Reveal>
-        <div className="mt-12 grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
+        <div className="mt-12 grid gap-6 xl:grid-cols-[0.92fr_1.08fr] xl:items-start">
           <Reveal delay={0.08}>
             <div className="grid gap-4 sm:grid-cols-2">
               {codingProfiles.map((profile, index) => {
@@ -26,7 +26,7 @@ export function ProfilesSection() {
                     href={profile.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="glass-panel rounded-[1.5rem] p-5 hover:-translate-y-1"
+                    className="glass-panel flex h-full flex-col rounded-[1.5rem] p-5 hover:-translate-y-1"
                   >
                     <div className="flex items-center justify-between">
                       <Icon className="text-2xl text-sky-300" />
@@ -36,6 +36,9 @@ export function ProfilesSection() {
                     </div>
                     <h3 className="mt-5 text-lg font-semibold text-white">{profile.label}</h3>
                     <p className="mt-2 text-sm text-[var(--color-text-soft)]">{profile.handle}</p>
+                    <span className="mt-auto pt-5 font-mono text-xs uppercase tracking-[0.14em] text-sky-200/75">
+                      Open profile
+                    </span>
                   </a>
                 );
               })}

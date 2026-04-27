@@ -22,31 +22,29 @@ export function ContactSection() {
             description={contactInfo.description}
           />
         </Reveal>
-        <div className="mt-12 grid gap-6 xl:grid-cols-[0.85fr_1.15fr]">
+        <div className="mt-12 grid gap-6 xl:grid-cols-[0.88fr_1.12fr] xl:items-start">
           <Reveal delay={0.08} className="glass-panel rounded-[1.5rem] p-6 md:p-8">
             <p className="eyebrow text-xs text-sky-300/80">Primary contact</p>
-            <p className="mt-4 text-2xl font-semibold text-white">
+            <p className="mt-4 break-all text-2xl font-semibold text-white sm:break-normal">
               {contactInfo.email}
             </p>
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-5 flex flex-wrap items-center gap-3">
               {quickEmailLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target={link.label === "Default app" ? undefined : "_blank"}
                   rel={link.label === "Default app" ? undefined : "noreferrer"}
-                  className="rounded-full border border-white/10 bg-slate-950/35 px-4 py-2 text-sm text-white hover:border-sky-300/40 hover:bg-sky-400/10"
+                  className="chip-link border border-white/10 bg-slate-950/35 px-4 py-2 text-sm text-white hover:border-sky-300/40 hover:bg-sky-400/10"
                 >
                   {link.label}
                 </a>
               ))}
-            </div>
-            <div className="mt-5">
               <CopyEmailButton email={contactInfo.email} />
             </div>
             <div className="mt-10">
               <p className="eyebrow text-xs text-sky-300/80">Social links</p>
-              <div className="mt-4 flex flex-wrap gap-3">
+              <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {codingProfiles.map((profile) => {
                   const Icon = profile.icon;
 
@@ -56,7 +54,7 @@ export function ContactSection() {
                       href={profile.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/35 px-4 py-2 text-sm text-white hover:border-sky-300/40 hover:bg-sky-400/10"
+                      className="chip-link justify-start gap-2 border border-white/10 bg-slate-950/35 px-4 py-2 text-sm text-white hover:border-sky-300/40 hover:bg-sky-400/10"
                     >
                       <Icon className="text-sky-300" />
                       {profile.label}

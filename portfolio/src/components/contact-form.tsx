@@ -36,7 +36,7 @@ export function ContactForm({ email }: ContactFormProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="glass-panel rounded-[1.5rem] p-6">
+    <form onSubmit={handleSubmit} className="glass-panel rounded-[1.5rem] p-6 md:p-8">
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm">
           <span className="text-[var(--color-text-soft)]">Your name</span>
@@ -85,7 +85,7 @@ export function ContactForm({ email }: ContactFormProps) {
       </label>
       <button
         type="submit"
-        className="mt-5 rounded-full bg-[linear-gradient(90deg,#7dd3fc_0%,#34d399_52%,#f5c451_100%)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_24px_rgba(125,211,252,0.28)] hover:scale-[1.02]"
+        className="button-primary mt-5 w-full bg-[linear-gradient(90deg,#7dd3fc_0%,#34d399_52%,#f5c451_100%)] px-5 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_24px_rgba(125,211,252,0.28)] hover:scale-[1.02] sm:w-auto"
       >
         Continue to email
       </button>
