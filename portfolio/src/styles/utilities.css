@@ -1,7 +1,13 @@
 .section-shell {
   position: relative;
-  width: min(1200px, calc(100% - 2rem));
+  width: min(1280px, calc(100% - 2rem));
   margin-inline: auto;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .section-shell {
+    width: min(1240px, calc(100% - 3rem));
+  }
 }
 
 .glass-panel {
@@ -24,6 +30,40 @@
     radial-gradient(circle at top left, rgba(52, 211, 153, 0.14), transparent 32%);
   border: 1px solid rgba(125, 211, 252, 0.18);
   box-shadow: 0 24px 80px rgba(2, 8, 23, 0.58);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  white-space: nowrap;
+}
+
+.chip-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: 9999px;
+  white-space: nowrap;
 }
 
 .section-title {
